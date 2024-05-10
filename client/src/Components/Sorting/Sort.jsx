@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { resetArray } from "../Array";
-import "./MergeSort.css";
+import { resetArray } from "./Array";
+import "./Sort.css";
 
-const MergeSort = () => {
+const Sort = () => {
   const [array, setArray] = React.useState([]);
 
   React.useEffect(() => {
@@ -12,7 +12,7 @@ const MergeSort = () => {
   }, []);
 
   return (
-    <div className="merge-sort-container">
+    <div className="sort-container">
       <div className="array-bar-container">
         {array.map((value, i) => (
           <div
@@ -34,4 +34,4 @@ const MergeSort = () => {
   );
 };
 
-export default MergeSort;
+export default Sort;

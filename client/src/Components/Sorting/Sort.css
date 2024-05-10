@@ -1,8 +1,8 @@
-.merge-sort-container {
+.sort-container {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 92vh;
+  height: 90vh;
   margin: 0;
   align-items: center;
   justify-content: center;

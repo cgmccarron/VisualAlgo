@@ -1,5 +1,11 @@
-import MergeSort from "@/Components/Sorting/MergeSort/MergeSort";
+import NavBar from "@/Components/NavBar/NavBar";
+import Sort from "@/Components/Sorting/Sort";
 
 export default function Home() {
-  return <MergeSort />;
+  return (
+    <>
+      <NavBar />
+      <Sort />
+    </>
+  );
 }
