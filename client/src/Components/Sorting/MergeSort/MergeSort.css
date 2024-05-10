@@ -1,3 +1,35 @@
+.merge-sort-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 92vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.array-bar-container {
+  display: flex;
+  margin: 0 5px;
+  height: 90vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 .array-bar {
-  color: white;
+  background-color: cadetblue;
+  margin: 0 1.5px;
+  width: 0.7vw;
+}
+
+.new-array-button {
+  width: 10em;
+  margin-top: 5px;
+  color: black;
+  background-color: lightgrey;
+  border: 1px darkgrey solid;
+}
+
+.new-array-button:hover {
+  cursor: pointer;
 }

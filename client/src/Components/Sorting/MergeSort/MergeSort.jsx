@@ -12,13 +12,25 @@ const MergeSort = () => {
   }, []);
 
   return (
-    <>
-      {array.map((value, i) => (
-        <div className="array-bar" key={i}>
-          {value}
-        </div>
-      ))}
-    </>
+    <div className="merge-sort-container">
+      <div className="array-bar-container">
+        {array.map((value, i) => (
+          <div
+            className="array-bar"
+            key={i}
+            style={{ height: `${value}%` }}
+          ></div>
+        ))}
+      </div>
+      <button
+        className="new-array-button"
+        onClick={() => {
+          setArray(resetArray);
+        }}
+      >
+        New Array
+      </button>
+    </div>
   );
 };
 
