@@ -3,6 +3,7 @@
 import React from "react";
 import { resetArray } from "./Array";
 import "./Sort.css";
+import { mergeSort } from "./MergeSort/MergeSort";
 
 const Sort = () => {
   const [array, setArray] = React.useState([]);
@@ -29,6 +30,15 @@ const Sort = () => {
         }}
       >
         New Array
+      </button>
+
+      <button
+        className="new-array-button"
+        onClick={() => {
+          mergeSort(array);
+        }}
+      >
+        Merge Sort
       </button>
     </div>
   );
