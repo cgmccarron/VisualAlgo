@@ -23,23 +23,25 @@ const Sort = () => {
           ></div>
         ))}
       </div>
-      <button
-        className="new-array-button"
-        onClick={() => {
-          setArray(resetArray);
-        }}
-      >
-        New Array
-      </button>
+      <div className="options-menu">
+        <button
+          className="sort-button"
+          onClick={() => {
+            setArray(resetArray);
+          }}
+        >
+          New Array
+        </button>
 
-      <button
-        className="new-array-button"
-        onClick={() => {
-          mergeSort(array);
-        }}
-      >
-        Merge Sort
-      </button>
+        <button
+          className="sort-button"
+          onClick={() => {
+            mergeSort(array);
+          }}
+        >
+          Merge Sort
+        </button>
+      </div>
     </div>
   );
 };

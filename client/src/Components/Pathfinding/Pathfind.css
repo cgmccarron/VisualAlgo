@@ -1,0 +1,7 @@
+.pathfind-container {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}

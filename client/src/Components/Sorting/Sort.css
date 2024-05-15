@@ -22,7 +22,7 @@
   width: 0.7vw;
 }
 
-.new-array-button {
+.sort-button {
   width: 10em;
   margin-top: 5px;
   color: black;
@@ -30,6 +30,6 @@
   border: 1px darkgrey solid;
 }
 
-.new-array-button:hover {
+.sort-button:hover {
   cursor: pointer;
 }
