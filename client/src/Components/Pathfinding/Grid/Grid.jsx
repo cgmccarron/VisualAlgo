@@ -18,22 +18,31 @@ export const getGridArray = () => {
   return grid;
 };
 
-const Grid = () => {
-  let grid = getGridArray();
-
-  return (
-    <div>
-      {grid.map((row, rowIdx) => {
-        return (
-          <div key={rowIdx} className="row-wrapper">
-            {row.map((node, nodeIdx) => {
-              return <Node key={nodeIdx} row={node.row} col={node.col} />;
-            })}
-          </div>
-        );
-      })}
-    </div>
-  );
+const Grid = ({ grid }) => {
+  if (grid.length > 0) {
+    return (
+      <div>
+        {grid.map((row, rowIdx) => {
+          return (
+            <div key={rowIdx} className="row-wrapper">
+              {row.map((node, nodeIdx) => {
+                return (
+                  <Node
+                    key={nodeIdx}
+                    row={node.row}
+                    col={node.col}
+                    grid={grid}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+    );
+  } else {
+    return <div>Loading</div>;
+  }
 };
 
 export default Grid;
