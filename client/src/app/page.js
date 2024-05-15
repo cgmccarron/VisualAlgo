@@ -1,3 +1,3 @@
 export default function Home() {
-  return <>Welcome to VISUAL ALGO</>;
+  return <>Welcome to Visual Algo</>;
 }

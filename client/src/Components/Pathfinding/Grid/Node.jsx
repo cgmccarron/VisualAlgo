@@ -9,6 +9,11 @@ const Node = ({ row, col, grid }) => {
     setNode({ ...node, isstartnode: true });
     grid[row][col] = { ...node, isstartnode: true };
   };
+
+  React.useEffect(() => {
+    setNode(grid[row][col]);
+  }, grid);
+
   return (
     <div
       className="node"

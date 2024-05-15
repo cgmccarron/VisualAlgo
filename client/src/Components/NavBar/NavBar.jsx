@@ -11,11 +11,15 @@ const NavBar = () => {
         <li className="navbar-menu-item">
           <a href={"./sorting"}>Sorting</a>
         </li>
-        <li className="navbar-menu-item">Searching</li>
+        <li className="navbar-menu-item">
+          <a href={"./searching"}>Searching</a>
+        </li>
         <li className="navbar-menu-item">
           <a href={"./pathfinding"}>Pathfinding</a>
         </li>
-        <li className="navbar-menu-item">Data Structures</li>
+        <li className="navbar-menu-item">
+          <a href={"./datastructures"}>Data Structures</a>
+        </li>
       </ul>
     </div>
   );

@@ -9,14 +9,16 @@ const Pathfind = () => {
   const [grid, setGrid] = useState(getGridArray());
 
   return (
-    <div
-      className="pathfind-container"
-      onClick={() => {
-        setGrid(grid);
-        console.log(grid);
-      }}
-    >
-      <Grid grid={grid} />
+    <>
+      <div
+        className="pathfind-container"
+        onClick={() => {
+          setGrid(grid);
+          console.log(grid);
+        }}
+      >
+        <Grid grid={grid} />
+      </div>
       <button
         onClick={() => {
           setGrid(getGridArray());
@@ -24,7 +26,7 @@ const Pathfind = () => {
       >
         NUKE THE GRID
       </button>
-    </div>
+    </>
   );
 };
 
